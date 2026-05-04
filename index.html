@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Baby Cash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH -->
+<div id="splash" class="screen">
+  <img src="images/01_splash_logo.jpg" class="logo">
+  <p class="powered">Powered by AmstrongBking</p>
+</div>
+
+<!-- LOADING -->
+<div id="loading" class="screen hidden">
+  <img src="images/02_loading.png" class="loading">
+</div>
+
+<!-- WELCOME -->
+<div id="welcome" class="screen hidden">
+  <img src="images/03_welcome.png" class="main-img">
+  <button onclick="goToLogin()">Commencer</button>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="screen hidden">
+  <img src="images/04_login.png" class="main-img">
+
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Mot de passe">
+  <button>Connexion</button>
+
+  <p onclick="goToRegister()" class="link">Créer mon compte</p>
+</div>
+
+<!-- REGISTER -->
+<div id="register" class="screen hidden">
+  <img src="images/05_register.png" class="main-img">
+
+  <input type="text" placeholder="Nom">
+  <input type="text" placeholder="Contact">
+  <input type="email" placeholder="Email">
+  <input type="tel" placeholder="Numéro de téléphone">
+  <input type="password" placeholder="Mot de passe">
+  <input type="password" placeholder="Confirmer mot de passe">
+
+  <label>
+    <input type="checkbox"> J'accepte les conditions
+  </label>
+
+  <button>S'inscrire</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
